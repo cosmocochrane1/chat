@@ -93,8 +93,7 @@ export async function GET() {
           fullText,
         });
 
-        // i need this to loop over all the fullArticles, chunk up the articles using langchain,
-        // and determine if the fulltext/article is relevent to code 99454
+        // i need this to loop over all the fullArticles, chunk up the articles using langchain, and determine if the fulltext/article
 
         console.log("fullArticles");
         // console.log(fullArticles);

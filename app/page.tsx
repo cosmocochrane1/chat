@@ -1,6 +1,6 @@
-import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
-import { cookies } from 'next/headers';
-import Link from 'next/link';
+import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
+import { cookies } from "next/headers";
+import Link from "next/link";
 
 export default async function Index() {
   const cookeStore = cookies();
@@ -10,8 +10,5 @@ export default async function Index() {
     data: { user },
   } = await supabase.auth.getUser();
 
-  return (
-    <div className="w-full flex flex-col items-center">
-    </div>
-  );
+  return <div className="w-full flex flex-col items-center">hello</div>;
 }
